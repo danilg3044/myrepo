@@ -13,10 +13,8 @@ public class Application {
 	}
 	
 	void methodVV() {
-		int i = 1;
 	}
 	
 	void methodDG() {
-		int i = 0;
 	}
 }
