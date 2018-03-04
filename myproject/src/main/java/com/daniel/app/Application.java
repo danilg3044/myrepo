@@ -5,6 +5,7 @@ package com.daniel.app;
  * Change on brnch1
  * Change on master
  * Change on brnch2
+ * Change on master
  */
 
 public class Application {
