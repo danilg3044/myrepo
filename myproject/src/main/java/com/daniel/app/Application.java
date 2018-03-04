@@ -18,6 +18,7 @@ public class Application {
 		int i = 0;
 	}
 	
-	void methodDG() {		
+	void methodDG() {
+		int i = 0;
 	}
 }
