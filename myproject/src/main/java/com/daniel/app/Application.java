@@ -8,6 +8,7 @@ package com.daniel.app;
  * Change on master
  * Another change on master
  * Another change on brnch2
+ * Yet another change on brnch2
  */
 
 public class Application {
