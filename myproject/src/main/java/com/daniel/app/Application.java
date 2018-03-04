@@ -6,6 +6,7 @@ package com.daniel.app;
  * Change on master
  * Good update
  * Updated by vv
+ * Updated by dg
  */
 
 public class Application {
