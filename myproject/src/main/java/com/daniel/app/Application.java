@@ -30,5 +30,10 @@ public class Application {
 
 	public static void main(String[] args) {
 		System.out.printf("Hello %s\n", args[0]);
+		m1(1);
+	}
+	
+	static void m1(int i) {
+		System.out.printf("number is %d\n", i);
 	}
 }
