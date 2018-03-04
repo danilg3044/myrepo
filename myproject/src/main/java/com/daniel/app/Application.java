@@ -15,6 +15,8 @@ public class Application {
 	}
 	
 	void methodVV() {
-		
+	}
+	
+	void methodDG() {		
 	}
 }
