@@ -15,6 +15,7 @@ public class Application {
 	}
 	
 	void methodVV() {
+		int i = 0;
 	}
 	
 	void methodDG() {		
