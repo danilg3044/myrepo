@@ -11,6 +11,8 @@ package com.daniel.app;
  * Yet another change on brnch2
  */
 
+// external change
+
 public class Application {
 	public static void main(String[] args) {
 		
