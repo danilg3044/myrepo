@@ -17,6 +17,6 @@ public class Application {
 	}
 	
 	void methodDG() {
-		int i = 0;
+		int i = 1;
 	}
 }
