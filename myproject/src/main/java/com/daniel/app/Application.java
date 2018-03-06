@@ -13,5 +13,6 @@ public class Application {
 	}
 	
 	void m2() {
+		int j = 0;
 	}
 }
