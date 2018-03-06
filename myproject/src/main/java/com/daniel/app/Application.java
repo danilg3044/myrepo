@@ -9,7 +9,7 @@ public class Application {
 	}
 	
 	void m1() {
-		int i = 0;
+		
 	}
 	
 	void m2() {
