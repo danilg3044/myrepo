@@ -7,4 +7,12 @@ public class Application {
 	public static void main(String[] args) {
 		
 	}
+	
+	void m1() {
+		
+	}
+	
+	void m2() {
+		
+	}
 }
