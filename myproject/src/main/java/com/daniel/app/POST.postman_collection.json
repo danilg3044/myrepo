@@ -1,0 +1,263 @@
+{
+	"info": {
+		"_postman_id": "45281879-5c03-4891-96f4-4f1da2dc0cb1",
+		"name": "POST",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET",
+			"item": [
+				{
+					"name": "DELETE",
+					"item": [
+						{
+							"name": "Delete Account",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "HTTP_Method",
+										"value": "DELETE"
+									},
+									{
+										"key": "HTTP_Path",
+										"value": "/account/entity"
+									},
+									{
+										"key": "X-API-Version",
+										"value": "1.0"
+									},
+									{
+										"key": "Accept",
+										"value": "application/xml"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<msEntityDelRequest xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\r\n   <RequestHeader>\r\n      <ruserid>if993539</ruserid>\r\n      <clientCode>GGF</clientCode>\r\n      <interfaceName>ifds.msAPI.msNASUPost</interfaceName>\r\n      <language>en</language>\r\n   </RequestHeader>\r\n   <accountNumber>26811001</accountNumber>\r\n   <entityId>264867</entityId>\r\n   <entityType>01</entityType>\r\n</msEntityDelRequest>\r\n"
+								},
+								"url": {
+									"raw": "localhost:8080/account/rdsp/entity",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"account",
+										"rdsp",
+										"entity"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Get Account",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "HTTP_Method",
+								"value": "GET"
+							},
+							{
+								"key": "HTTP_Path",
+								"value": "/account/rdsp/entity"
+							},
+							{
+								"key": "X-API-Version",
+								"value": "1.0"
+							},
+							{
+								"key": "Accept",
+								"value": "application/xml"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<msNASUPostRequest xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\r\n   <RequestHeader>\r\n      <ruserid>if993539</ruserid>\r\n      <clientCode>GGF</clientCode>\r\n      <interfaceName>ifds.msAPI.msNASUPost</interfaceName>\r\n      <language>en</language>\r\n   </RequestHeader>\r\n   <AcctSetup>\r\n      <accountNumber>26811001</accountNumber>\r\n      <deff>10/05/2016</deff>\r\n      <accountStat>10</accountStat>\r\n      <createdBy>if993539</createdBy>\r\n      <EntityInfoList>\r\n         <EntityInfo>\r\n            <entityId>264867</entityId>\r\n            <category>00</category>\r\n            <firstName>Tomasz</firstName>\r\n            <lastName>Przada</lastName>\r\n            <dob>31/12/1980</dob>\r\n            <sex>M</sex>\r\n            <language>E</language>\r\n            <sin>624564035</sin>\r\n            <taxjusris>CA-ON</taxjusris>\r\n            <consent>Y</consent>\r\n            <consentDeff>18/06/2018</consentDeff>\r\n            <acctEntityList>\r\n               <acctEntity>\r\n                  <entityType>01</entityType>\r\n                  <deff>10/05/2016</deff>\r\n                  <relntoBene>SF</relntoBene>\r\n               </acctEntity>\r\n               <acctEntity>\r\n                  <entityType>79</entityType>\r\n                  <deff>10/05/2016</deff>\r\n               </acctEntity>\r\n            </acctEntityList>\r\n            <addressInfo>\r\n               <line1>DUNCANST</line1>\r\n               <line2>TORONTO</line2>\r\n               <city>Toronto</city>\r\n                                             <provCode>ON</provCode>\r\n                                             <countryCode>CA</countryCode>\r\n            </addressInfo>\r\n         </EntityInfo>\r\n      </EntityInfoList>\r\n   </AcctSetup>\r\n</msNASUPostRequest>\r\n"
+						},
+						"url": {
+							"raw": "localhost:8080/account/rdsp/26811001/entity",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"account",
+								"rdsp",
+								"26811001",
+								"entity"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Transaction",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "HTTP_Method",
+								"value": "GET"
+							},
+							{
+								"key": "HTTP_Path",
+								"value": "/transaction"
+							},
+							{
+								"key": "X-API-Version",
+								"value": "1.0"
+							},
+							{
+								"key": "Accept",
+								"value": "application/xml"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<msNASUPostRequest xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\r\n   <RequestHeader>\r\n      <ruserid>if993539</ruserid>\r\n      <clientCode>GGF</clientCode>\r\n      <interfaceName>ifds.msAPI.msNASUPost</interfaceName>\r\n      <language>en</language>\r\n   </RequestHeader>\r\n   <AcctSetup>\r\n      <accountNumber>26811001</accountNumber>\r\n      <deff>10/05/2016</deff>\r\n      <accountStat>10</accountStat>\r\n      <createdBy>if993539</createdBy>\r\n      <EntityInfoList>\r\n         <EntityInfo>\r\n            <entityId>264867</entityId>\r\n            <category>00</category>\r\n            <firstName>Tomasz</firstName>\r\n            <lastName>Przada</lastName>\r\n            <dob>31/12/1980</dob>\r\n            <sex>M</sex>\r\n            <language>E</language>\r\n            <sin>624564035</sin>\r\n            <taxjusris>CA-ON</taxjusris>\r\n            <consent>Y</consent>\r\n            <consentDeff>18/06/2018</consentDeff>\r\n            <acctEntityList>\r\n               <acctEntity>\r\n                  <entityType>01</entityType>\r\n                  <deff>10/05/2016</deff>\r\n                  <relntoBene>SF</relntoBene>\r\n               </acctEntity>\r\n               <acctEntity>\r\n                  <entityType>79</entityType>\r\n                  <deff>10/05/2016</deff>\r\n               </acctEntity>\r\n            </acctEntityList>\r\n            <addressInfo>\r\n               <line1>DUNCANST</line1>\r\n               <line2>TORONTO</line2>\r\n               <city>Toronto</city>\r\n                                             <provCode>ON</provCode>\r\n                                             <countryCode>CA</countryCode>\r\n            </addressInfo>\r\n         </EntityInfo>\r\n      </EntityInfoList>\r\n   </AcctSetup>\r\n</msNASUPostRequest>\r\n"
+						},
+						"url": {
+							"raw": "localhost:8080/transaction/26811001",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"transaction",
+								"26811001"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Create Account",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "HTTP_Method",
+						"value": "POST"
+					},
+					{
+						"key": "HTTP_Path",
+						"value": "/account"
+					},
+					{
+						"key": "X-API-Version",
+						"value": "1.0"
+					},
+					{
+						"key": "Accept",
+						"value": "application/xml"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<msNASUPostRequest xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\r\n   <RequestHeader>\r\n      <ruserid>if993539</ruserid>\r\n      <clientCode>GGF</clientCode>\r\n      <interfaceName>ifds.msAPI.msNASUPost</interfaceName>\r\n      <language>en</language>\r\n   </RequestHeader>\r\n   <AcctSetup>\r\n      <accountNumber>26811001</accountNumber>\r\n      <deff>10/05/2016</deff>\r\n      <accountStat>10</accountStat>\r\n      <createdBy>if993539</createdBy>\r\n      <EntityInfoList>\r\n         <EntityInfo>\r\n            <entityId>264867</entityId>\r\n            <category>00</category>\r\n            <firstName>Tomasz</firstName>\r\n            <lastName>Przada</lastName>\r\n            <dob>31/12/1980</dob>\r\n            <sex>M</sex>\r\n            <language>E</language>\r\n            <sin>624564035</sin>\r\n            <taxjusris>CA-ON</taxjusris>\r\n            <consent>Y</consent>\r\n            <consentDeff>18/06/2018</consentDeff>\r\n            <acctEntityList>\r\n               <acctEntity>\r\n                  <entityType>01</entityType>\r\n                  <deff>10/05/2016</deff>\r\n                  <relntoBene>SF</relntoBene>\r\n               </acctEntity>\r\n               <acctEntity>\r\n                  <entityType>79</entityType>\r\n                  <deff>10/05/2016</deff>\r\n               </acctEntity>\r\n            </acctEntityList>\r\n            <addressInfo>\r\n               <line1>DUNCANST</line1>\r\n               <line2>TORONTO</line2>\r\n               <city>Toronto</city>\r\n                                             <provCode>ON</provCode>\r\n                                             <countryCode>CA</countryCode>\r\n                                             <postalCode>A1B 2C3</postalCode>\r\n            </addressInfo>\r\n         </EntityInfo>\r\n      </EntityInfoList>\r\n   </AcctSetup>\r\n</msNASUPostRequest>\r\n"
+				},
+				"url": {
+					"raw": "localhost:8080/account/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"account",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Entity",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "HTTP_Method",
+						"value": "POST"
+					},
+					{
+						"key": "HTTP_Path",
+						"value": "/account/entity"
+					},
+					{
+						"key": "X-API-Version",
+						"value": "1.0"
+					},
+					{
+						"key": "Accept",
+						"value": "application/xml"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<msEntityPostRequest xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\r\n   <RequestHeader>\r\n      <ruserid>if993539</ruserid>\r\n      <clientCode>GGF</clientCode>\r\n      <interfaceName>ifds.msAPI.msNASUPost</interfaceName>\r\n      <language>en</language>\r\n   </RequestHeader>\r\n   <accountNumber>26811001</accountNumber>\r\n   <EntityInfo>\r\n            <entityId>264867</entityId>\r\n            <category>00</category>\r\n            <firstName>Tomasz</firstName>\r\n            <lastName>Przada</lastName>\r\n            <dob>31/12/1980</dob>\r\n            <sex>M</sex>\r\n            <language>E</language>\r\n            <sin>624564035</sin>\r\n            <taxjusris>CA-ON</taxjusris>\r\n            <consent>Y</consent>\r\n            <consentDeff>18/06/2018</consentDeff>\r\n            <acctEntityList>\r\n               <acctEntity>\r\n                  <entityType>01</entityType>\r\n                  <deff>10/05/2016</deff>\r\n                  <relntoBene>SF</relntoBene>\r\n               </acctEntity>\r\n               <acctEntity>\r\n                  <entityType>79</entityType>\r\n                  <deff>10/05/2016</deff>\r\n               </acctEntity>\r\n            </acctEntityList>\r\n            <addressInfo>\r\n               <line1>DUNCANST</line1>\r\n               <line2>TORONTO</line2>\r\n               <city>Toronto</city>\r\n                                             <provCode>ON</provCode>\r\n                                             <countryCode>CA</countryCode>\r\n                                             <postalCode>X9Y 8Z7</postalCode>\r\n            </addressInfo>\r\n         </EntityInfo>\r\n</msEntityPostRequest>\r\n"
+				},
+				"url": {
+					"raw": "localhost:8080/account/entity",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"account",
+						"entity"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Address",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "HTTP_Method",
+						"value": "POST"
+					},
+					{
+						"key": "HTTP_Path",
+						"value": "/account/entity/address"
+					},
+					{
+						"key": "X-API-Version",
+						"value": "1.0"
+					},
+					{
+						"key": "Accept",
+						"value": "application/xml"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<msEntityAddressPostRequest xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\r\n   <RequestHeader>\r\n      <ruserid>if993539</ruserid>\r\n      <clientCode>GGF</clientCode>\r\n      <interfaceName>ifds.msAPI.msNASUPost</interfaceName>\r\n      <language>en</language>\r\n   </RequestHeader>\r\n   <accountNumber>26811001</accountNumber>\r\n   <entityId>264867</entityId>\r\n   <addressInfo>\r\n               <line1>DUNCANST</line1>\r\n               <line2>TORONTO</line2>\r\n               <city>Toronto</city>\r\n                                             <provCode>ON</provCode>\r\n                                             <countryCode>CA</countryCode>\r\n                                             <postalCode>M5N 4L6</postalCode>\r\n            </addressInfo>\r\n</msEntityAddressPostRequest>\r\n"
+				},
+				"url": {
+					"raw": "localhost:8080/account/entity",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"account",
+						"entity"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
